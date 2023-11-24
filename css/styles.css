@@ -10976,7 +10976,7 @@ header.masthead {
 header#headerIndex {
   padding-top: 4rem;
     padding-bottom: calc(30rem - 4.5rem);
-    background-image: url("../foto-Reformas-Barcelona-EV/network-3354116_1920.jpg");
+    background-image: url("../img/network-3354116_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11015,7 +11015,7 @@ header#headerExitosBackground {
 #headerReformasBackground {
     padding-top: 5rem;
     padding-bottom: calc(30rem - 4.5rem);
-    background-image: url("../foto-Reformas-Barcelona-EV/Без\ имени-4.png");
+    background-image: url("../img/Без\ имени-4.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
