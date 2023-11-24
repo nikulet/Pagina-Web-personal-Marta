@@ -10882,7 +10882,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: green;
+  background-color: violet;
   opacity: 1;
 }
 
@@ -11281,32 +11281,6 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
 
 .img-fluid, .portfolio-box{width: 550px;height: 350px;}
 #submitButton{background-color: green;}
-
-
-#logoWhatsapp {
-  width: 60px;
-  height: 60px;
-  padding-top: 3px;
-  padding-left: 1px;
-  margin-right: auto; 
-} 
-
-#logoWhatsapp:hover {
-  background-color: #13653f;
-  border-radius: 15px;
-  box-shadow: 0px 0px 40px 0px;
-  border: 1px solid grey; 
-} 
-
-        div.fixed {
-          position: fixed;
-          bottom: 20px;
-          right: 10px;
-          width: 70px;
-
-          /* border: 3px solid #73AD21; */
-        }
-     
         
 
 /* Imagens que se cambia automatico */    
@@ -11427,7 +11401,8 @@ header nav a:hover {
   place-content: center;
 }
 
-#RedesSocialesFacebook, #RedesSocialesTwitter, #RedesSocialesYoutube, #RedesSocialesInstagram, #RedesSocialesLinkedin, #RedesSocialesGithub {
+#RedesSocialesFacebook, #RedesSocialesTwitter, #RedesSocialesYoutube, #RedesSocialesInstagram, 
+#RedesSocialesLinkedin, #RedesSocialesGithub,  #RedesSocialesWhatsapp {
   margin: 15px;
 }
 
@@ -11453,4 +11428,8 @@ header nav a:hover {
 
 #RedesSocialesGithub:hover {
   color: #4E4B51;
+}
+
+#RedesSocialesWhatsapp a:hover {
+  color: green;
 }
