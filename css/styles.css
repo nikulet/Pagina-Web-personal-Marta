@@ -11175,11 +11175,11 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
     width: 70%;
   }
 
-  /*
+  
   button {
     margin: 0;
-     margin-top: 4px; 
-  } */
+    /* margin-top: 4px; */
+  }
 
   /*    Nuevo Cliente     */
   section form#BoxFormulario fieldset label {
@@ -11208,7 +11208,7 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
 #fotoReforma{width: 33%; height: auto;}
 
 .img-fluid, .portfolio-box{width: 550px;height: 350px;}
-#submitButton{background-color: green;}
+#submitButton{background-color: green; width: 150px;}
         
 
 /* Imagens que se cambia automatico */    
@@ -11527,6 +11527,7 @@ col {
 
 #TiposRevistas {
   background-color: #ebe4ed;
+  padding-bottom: 70px;
 }
 
 #page-top {
@@ -11534,7 +11535,8 @@ col {
 }
 
 #collapseWidthExample, #collapseExample, #collapseExample1, 
-#collapseExample2, #collapseExample3, #collapseExample4, #collapses  {
+#collapseExample2, #collapseExample3, #collapseExample4, 
+#collapses, #collapseExample5, #collapseExample6  {
   margin: 50px;
 }
 
