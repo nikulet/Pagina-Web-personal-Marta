@@ -4722,59 +4722,6 @@ textarea.form-control-lg {
   color: #101214;
 }
 
-@keyframes progress-bar-stripes {
-  0% {
-    background-position-x: 1rem;
-  }
-}
-.progress {
-  --bs-progress-height: 1rem;
-  --bs-progress-font-size: 0.75rem;
-  --bs-progress-bg: #e9ecef;
-  --bs-progress-border-radius: 0.375rem;
-  --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #f4623a;
-  --bs-progress-bar-transition: width 0.6s ease;
-  display: flex;
-  height: var(--bs-progress-height);
-  overflow: hidden;
-  font-size: var(--bs-progress-font-size);
-  background-color: var(--bs-progress-bg);
-  border-radius: var(--bs-progress-border-radius);
-}
-
-.progress-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  color: var(--bs-progress-bar-color);
-  text-align: center;
-  white-space: nowrap;
-  background-color: var(--bs-progress-bar-bg);
-  transition: var(--bs-progress-bar-transition);
-}
-@media (prefers-reduced-motion: reduce) {
-  .progress-bar {
-    transition: none;
-  }
-}
-
-.progress-bar-striped {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-size: var(--bs-progress-height) var(--bs-progress-height);
-}
-
-.progress-bar-animated {
-  animation: 1s linear infinite progress-bar-stripes;
-}
-@media (prefers-reduced-motion: reduce) {
-  .progress-bar-animated {
-    animation: none;
-  }
-}
-
 .list-group {
   --bs-list-group-color: #212529;
   --bs-list-group-bg: #fff;
@@ -11024,9 +10971,7 @@ header.masthead h1, header.masthead .h1 {
     padding-top: 3.5rem;
     padding-bottom: 0;  
   }
-  #progress-bar {
-    padding-bottom: 100px;
-  }
+
   header.masthead p {
     font-size: 1.15rem;
   }
@@ -11349,7 +11294,7 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
 
 .progress {
   width: 0%;
-  height: 100%;
+  height: 3px;
   background-color: #6A77D8;
 }
 
@@ -11363,6 +11308,14 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
     width: 87%;
     height: 400px;
   }
+.progress-bar {
+  margin-top: 114px;
+}
+#proprietarioDeLaPagina {
+background-color: violet;
+padding: 5px;
+border-radius: 10px;
+}
 }
 
 header nav a:hover {
@@ -11472,6 +11425,11 @@ ol .listaStudySubCapitolo {
   color: black;
 }
 
+.listStudy1 li {
+  list-style-type: lower-latin;
+  color: #595787;
+}
+
 .categories li {
   list-style-type: disc;
 }
@@ -11569,7 +11527,6 @@ col {
 
 #TiposRevistas {
   background-color: #ebe4ed;
-  margin: 50px;
 }
 
 #page-top {
@@ -11577,7 +11534,7 @@ col {
 }
 
 #collapseWidthExample, #collapseExample, #collapseExample1, 
-#collapseExample2, #collapseExample3, #collapseExample4  {
+#collapseExample2, #collapseExample3, #collapseExample4, #collapses  {
   margin: 50px;
 }
 
