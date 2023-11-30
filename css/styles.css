@@ -11568,3 +11568,53 @@ col {
 #linkRevistas:hover {
   color: blue;
 }
+
+/* Todo para search en nav */
+.buscar {
+  position: absolute;
+  padding: 5px;
+
+}
+
+.buscar input {
+  width: 0px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: black;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+}
+
+.btnn {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #440080;
+  line-height: 55px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buscar:hover input {
+  width: 240px;
+
+
+}
+
+.buscar input:focus {
+
+  width: 240px;
+}
+
+
+
+/**************************************/
