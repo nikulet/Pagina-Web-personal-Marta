@@ -39,41 +39,39 @@
     <body id="page-top">
 
         <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-             <a href="./index.html"><h1 id="proprietarioDeLaPagina">Marta&nbsp; Arguedas&nbsp; Lafuente</h1></a>
-                
-             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+                <a href="./index.html"><h1 id="proprietarioDeLaPagina">Marta&nbsp; Arguedas&nbsp; Lafuente</h1></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" id="activo" href="#">Quien soy</a></li>
+                        <li class="nav-item"><a id="activo" class="nav-link" href="#">Quien soy</a></li>
                         <li class="nav-item"><a class="nav-link" href="./Pages/estudios.html">Estudios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./Pages/estudios.html">Enseño</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Pages/enseno.html">Enseño</a></li>
                         <li class="nav-item"><a class="nav-link" href="./Pages/revistas.html">Revistas</a></li>
                         <li class="nav-item"><a class="nav-link" href="./Pages/proyectos.html">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./Pages/contacto.html">Contacto</a></li>
-                        <li><div class="buscar">
-        <input type="text" placeholder="Buscar" required>
-        <div class="btnn">
-            <i class="bi bi-search"></i>
-            </div>
-    </div>
-    </li>
                     </ul>
-                    
                 </div>
-                
-            </div>
-            
-                    <!--Barra de progreso inicio-->
+        </div>
+            <!--Barra de progreso inicio-->
             <div class="progress-bar">
                 <div id="progress" class="progress"></div>
             </div>
-
     </nav>
-    
+
+                            <!--  para buscador en sitio
+                               <li>
+                            <div class="buscar">
+                                <input type="text" placeholder="Buscar" required>
+                                <div class="btnn">
+                                    <i class="bi bi-search"></i>
+                            </div>  
+                        </div> 
+                        </li> 
+                      FIN  para buscador en sitio -->
+
+
 
         <!-- Masthead-->
     <header id="headerIndex">
@@ -99,7 +97,7 @@
 
         <!-- About-->
     <section class="page-section bg-primary">
-        <div class="table-container">
+
             <p class="text-white-75 mb-4">
                         <strong><u>Resumen libre del currículum</u></strong> 
                        </p>
@@ -108,12 +106,12 @@
 
             <p>
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-   <i class="bi bi-file-person">&nbsp; <i class="bi bi-arrow-right-square-fill"> </i>&nbsp;&nbsp;&nbsp;&nbsp; Datos Personales</i>
+   <i class="bi bi-file-person" id="mover">&nbsp; <i class="bi bi-arrow-right-square-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp; Datos Personales</i>
   </a>
 </p>
 
-  <div class="collapse collapse-horizontal" id="collapseExample">
-  <div class="card card-body" style="width: 80%; margin:auto; background-color:#ebebd8;">
+  <div class="collapse" id="collapseExample">
+  <div class="card card-body" id="datosPersonalessIndex">
     <ol>
         
     <li class="LibrosRevistas"><b>Apellidos: <b class="TextoSubrayado">Arguedas Lafuente</b></b><br></li>
@@ -133,35 +131,35 @@
 
     </ol>
 </div>
-</div>
+       <p id="colapExample6">
+  <a class="btnn btnn-primary" id="conocimentosIdiomas" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+   <i class="bi bi-arrow-right-circle"> Conocimiento de idiomas:</i>
+  </a>
+</p>
+
 
 <!---->
 
-
-    <table>
+<div class="collapse" id="collapseExample6">
+  <div class="card card-body" id="datosPersonalessIndex1">
+    
+    <table class="table table-sm" id="tablaGrandeCompleta">
+        
         <caption>Conocimiento de idiomas:</caption>
-      <colgroup>
-        <col>
-        <col>
-        <col>
-        <col>
-        <col>
-        <col>
-      </colgroup>
       <thead>
         <tr>
-            <th>Idioma</th>
-            <th>Comprensión auditiva</th>
-            <th>Comprensión de lectura</th>
-            <th>Interacción oral</th>
-            <th>Expresión oral</th>
-            <th>Expresión escrita</th>
+            <th scope="col">Idioma</th>
+            <th scope="col">Comprensión auditiva</th>
+            <th scope="col">Comprensión de lectura</th>
+            <th scope="col">Interacción oral</th>
+            <th scope="col">Expresión oral</th>
+            <th scope="col">Expresión escrita</th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
-          <th>Español</th>
+          <th scope="row">Español</th>
           <td>C2</td>
           <td>C2</td>
           <td>C2</td>
@@ -170,7 +168,7 @@
         </tr>
 
         <tr>
-          <th>Ingles</th>
+          <th scope="row">Ingles</th>
           <td>B2</td>
           <td>B2</td>
           <td>B2</td>
@@ -179,7 +177,7 @@
         </tr>
 
         <tr>
-          <th>Catalán</th>
+          <th scope="row">Catalán</th>
           <td>B2</td>
           <td>B2</td>
           <td>B2</td>
@@ -188,7 +186,7 @@
         </tr>
 
         <tr>
-          <th>Francés</th>
+          <th scope="row">Francés</th>
           <td>A2</td>
           <td>A2</td>
           <td>A2</td>
@@ -197,7 +195,7 @@
         </tr>
 
         <tr>
-          <th>Griego</th>
+          <th scope="row">Griego</th>
           <td>A1</td>
           <td>A1</td>
           <td>A1</td>
@@ -207,25 +205,20 @@
         
       </tbody> 
     </table>
-  </div>
-        <div class="container col gx-1" id="about">
+   <p id="tablaMovil"></p>
+</div>
+</div>
+</div> <!---->
+
+
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <!--<img id="fotoReforma" src="./foto-Reformas-Barcelona-EV/logo-Reformas-Barcelona-EV/logo-Foto-Reformas-Barcelona-EV.png" alt="Foto Reforma-Barcelona-EV"> -->
                  <div class="col-lg-8 text-center">
-                       <!-- <h2 class="text-white mt-0">Reformas-Barcelona-<strong><u>EV</u></strong></h2>
-                        <hr class="divider divider-light" />  -->
-                       <p>
-                        Desarrolladora de tareas de gestión contable y administrativas en diversas empresas tras concluir mi Formación Profesional de segundo grado en la rama administrativa y comercial con especialidad en Informática de Empresas.
-<br><br>Fui profesora titular del programa de Ingeniería Técnica en Informática de Sistemas de la Escuela Universitaria Politécnica de La Almunia adscrita a la Universidad de Zaragoza, España, involucrada en las áreas de Arquitectura y Tecnología de Computadores así como de Lenguajes y Sistemas Informáticos hasta septiembre de 2012, después de concluir mí. Ingeniería Técnica en Informática de Sistemas. Siendo becada al comienzo de mi segundo curso hasta la finalización de mis estudios.
-<br><br>Además de ejercer mis funciones docentes, fui responsable de la gestión de recursos humanos, administración y mantenimiento de los laboratorios y equipos informáticos del centro, desde Septiembre de 1995 hasta Septiembre 2012. Durante todo ese tiempo, participe en la organización de Asambleas, Congresos, cursos y conferencias en mi universidad. Fui miembro del Departamento de I+D de la Escuela Politécnica en donde colabore activamente en las tareas de tutela de proyectos e investigación. Por último, llevé a cabo funciones de tutoría de diversos alumnos del Ciclo Formativo de Grado Superior Desarrollo de Aplicaciones Informáticas, durante la realización de sus prácticas, con una duración de 380 horas.
-<br><br>Desde el año 2012, en el ejercicio libre de mi profesión, lleve a cabo labores de tutoría y/o docencia de alumnos en diferentes ámbitos de la formación reglada y no reglada tutorando durante el desarrollo de sus estudios, alumnos del Ciclo Medio de Sistemas Microinformático y Redes y alumnos de diversos certificados de Profesionalidad del SEPE y del SOC en modalidad online y presencial en diferentes provincias españolas, así como de alumnos del Master de Educación y TIC de la UOC durante tres cursos consecutivos por lo que conozco bien el modelo y sistema educativo de la UOC,.
-<br><br>Soy doctora en Educación y TIC (eLearning) por la Universitat Oberta de Catalunya, licenciada en Ingeniería Técnica en Informática de Sistemas por la Escuela Universitaria Politécnica de La Almunia y dos másteres, uno en Educación y TIC (e-learning) y otro en Aplicaciones Multimedia, por la Universitat Oberta de Catalunya, España.
-<br><br>Actualmente, soy profesora del Master Universitario en Formación del Profesorado especialidad de Tecnología e Informática y Directora de los Trabajos Fin de Master, Directora de los Trabajos Fin de Master del Master Universitario en Necesidades Educativas Especiales y Atención Temprana y profesora del Máster en Investigación en Educación en la asignatura de Métodos mixtos de investigación en educación (VIU- Universidad internacional de Valencia).
-<br><br>Además, de miembro del IN3- Grupo SmartLearn (UOC) como investigadora. Mis intereses de investigación son: Inteligencia Emocional, Learning Analytics, E-learning, Sistemas Colaborativos, Afectivos y Adaptativos, Análisis de la Interacción, CSCL, CSCW, Gestión del Conocimiento.
-                       </p>
+                       <p id="typewriter">
+                        </p>
                 </div>
             </div>
-            </div>
+
+
     </section>
         
     <!-- Footer-->
@@ -279,6 +272,21 @@
             </div>
 
         </section>
+        
+        <p id="rides">
+        <h4 style="text-align: center;"><em class="TiposRedesSociales1">Redes sociales:</em></h4>
+            <div id="RedesSocialesFooter1">
+                <div id="RedesSocialesFacebook"><a><i class="bi bi-facebook"></i></a></div>
+                <div id="RedesSocialesTwitter"><a><i class="bi bi-twitter"></i></a></div>
+                <div id="RedesSocialesYoutube"><a><i class="bi bi-youtube"></i></a></div>
+                <div id="RedesSocialesInstagram"><a><i class="bi bi-instagram"></i></a></div>
+                <div id="RedesSocialesLinkedin"><a><i class="bi bi-linkedin"></i></a></div>
+                <div id="RedesSocialesGithub"><a><i class="bi bi-github"></i></a></div>
+                <div id="RedesSocialesWhatsapp"><a href="https://wa.me/0034646930223?text=Hola%20Marta." target="_blank"><i class="bi bi-whatsapp"></i></a></div>
+            </div>
+      </p>
+
+
             <div class="container px-4 px-lg-10"><div class="small text-center text-muted">Copyright&copy; Todos los derechos reservados. <strong><u>Marta Arguedas Lafuente</u></strong></div></div>
     </footer>
         <!-- Bootstrap core JS-->
