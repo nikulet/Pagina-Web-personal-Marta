@@ -43,11 +43,14 @@ window.addEventListener('DOMContentLoaded', event => {
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            if (window.getComputedStyle(navbarToggler).display !== 'flex') {
                 navbarToggler.click();
             }
         });
     });
+
+
+
 
     // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
@@ -66,7 +69,7 @@ function update() {
     progress.style.width = `${((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100)}%`;
     requestAnimationFrame(update);
 }
-/* Inicio Para barra de progreso  */
+/* Fin Para barra de progreso  */
 
 
 /* Header cambio de IMG random 
@@ -140,21 +143,10 @@ function type() {
     }
 }, 8000);
 }
-/*  FIN Txtu care se scrie automat singur  */
-
-/*const rides = document.getElementById('rides').innerHTML=`<h4 style="text-align: center;"><em class="TiposRedesSociales">Redes sociales:</em></h4>
-            <div id="RedesSocialesFooter">
-                <div id="RedesSocialesFacebook"><a><i class="bi bi-facebook"></i></a></div>
-                <div id="RedesSocialesTwitter"><a><i class="bi bi-twitter"></i></a></div>
-                <div id="RedesSocialesYoutube"><a><i class="bi bi-youtube"></i></a></div>
-                <div id="RedesSocialesInstagram"><a><i class="bi bi-instagram"></i></a></div>
-                <div id="RedesSocialesLinkedin"><a><i class="bi bi-linkedin"></i></a></div>
-                <div id="RedesSocialesGithub"><a><i class="bi bi-github"></i></a></div>
-                <div id="RedesSocialesWhatsapp"><a href="https://wa.me/0034646930223?text=Hola%20Marta." target="_blank"><i class="bi bi-whatsapp"></i></a></div>
-            </div>`;   */
+/*  FIN Txtu care se scrie automat singur  */  
 
 
-const tablaMovil = document.getElementById('tablaMovil').innerHTML=`<table class="table table-sm">
+const tablaMovil = document.getElementById('tablaMovil').innerHTML +=`<table class="table table-sm">
     <caption>Conocimiento de idiomas:</caption>
       <thead><tr><th scope="col">Idioma</th><th scope="col">Nivel</th></tr></thead>
       <tbody>
@@ -165,4 +157,3 @@ const tablaMovil = document.getElementById('tablaMovil').innerHTML=`<table class
         <tr><th scope="row">Griego</th><td>A1</td></tr> 
       </tbody> 
     </table>`;
-
