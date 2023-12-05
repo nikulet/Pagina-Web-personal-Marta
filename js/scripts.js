@@ -113,7 +113,7 @@ setInterval(changeBackground, 1000);
 
 
 
-/*  Inceput Txtu care se scrie automat singur  */
+/*  Inceput Txtu care se scrie automat singur  
 const text = `Desarrolladora de tareas de gestión contable y administrativas en diversas empresas tras concluir mi Formación Profesional de segundo grado en la rama administrativa y comercial con especialidad en Informática de Empresas.
 <br><br>Fui profesora titular del programa de Ingeniería Técnica en Informática de Sistemas de la Escuela Universitaria Politécnica de La Almunia adscrita a la Universidad de Zaragoza, España, involucrada en las áreas de Arquitectura y Tecnología de Computadores así como de Lenguajes y Sistemas Informáticos hasta septiembre de 2012, después de concluir mí. Ingeniería Técnica en Informática de Sistemas. Siendo becada al comienzo de mi segundo curso hasta la finalización de mis estudios.
 <br><br>Además de ejercer mis funciones docentes, fui responsable de la gestión de recursos humanos, administración y mantenimiento de los laboratorios y equipos informáticos del centro, desde Septiembre de 1995 hasta Septiembre 2012. Durante todo ese tiempo, participe en la organización de Asambleas, Congresos, cursos y conferencias en mi universidad. Fui miembro del Departamento de I+D de la Escuela Politécnica en donde colabore activamente en las tareas de tutela de proyectos e investigación. Por último, llevé a cabo funciones de tutoría de diversos alumnos del Ciclo Formativo de Grado Superior Desarrollo de Aplicaciones Informáticas, durante la realización de sus prácticas, con una duración de 380 horas.
@@ -140,7 +140,7 @@ function type() {
     }
 }, 8000);
 }
-/*  FIN Txtu care se scrie automat singur  */
+  FIN Txtu care se scrie automat singur  */
 
 const rides = document.getElementById('rides').innerHTML=`<h4 style="text-align: center;"><em class="TiposRedesSociales">Redes sociales:</em></h4>
             <div id="RedesSocialesFooter">
