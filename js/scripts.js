@@ -72,49 +72,6 @@ function update() {
 /* Fin Para barra de progreso  */
 
 
-/* Header cambio de IMG random 
-const images = [
-
-"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/1.jpg",
-"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/2.jpg",
-"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/3.jpg",
-"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/4.jpg",
-"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/5.jpg",
-"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/6.jpg",
-"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/7.jpg",
-
-];
-
-var currentURL = window.location.href;
-
-if (currentURL.includes("index.html")) {
-// Estás en la página index.html
-const imag = document.getElementById('fotoCarusel');
-let currentIndex = 0;
-
-function changeBackground() {
-imag.style.backgroundImage = `url('${images[currentIndex]}')`;
-currentIndex = (currentIndex + 1) % images.length;
-}
-
-// Oculta el carrusel hasta que todas las imágenes se hayan cargado por completo
-imag.style.display = 'none';
-
-// Precarga de imágenes
-const preloadImages = images.map((imageSrc) => {
-const img = new Image();
-img.src = imageSrc;
-img.onload = () => {
-// Muestra el carrusel una vez que todas las imágenes se hayan cargado
-imag.style.display = 'block';
-};
-});
-
-setInterval(changeBackground, 1000);
-}
-*/
-
-
 
 /*  Inceput Txtu care se scrie automat singur  */
 const text = `Desarrolladora de tareas de gestión contable y administrativas en diversas empresas tras concluir mi Formación Profesional de segundo grado en la rama administrativa y comercial con especialidad en Informática de Empresas.
@@ -146,7 +103,100 @@ function type() {
 /*  FIN Txtu care se scrie automat singur  */  
 
 
-const tablaMovil = document.getElementById('tablaMovil').innerHTML +=`<table class="table table-sm">
+
+
+
+
+document.getElementById("ensenoTablaPequna").innerHTML +=`<table class="table table-sm">
+        <caption>Puestos desempeñados en la enseñanza reglada universitaria:</caption>
+      <thead>
+        <tr>
+            <th>Categoría</th>
+            <th>Centro, Tiempo, Fecha</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Profesor Ayudante de Ingeniería Técnica en Informática de Sistemas</th>
+          <td>Centro: EUPLA. Tiempo Completo. Activando desde Octubre 1997 hasta Agosto 2000.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Profesora Agregada de Ingeniería Técnica en Informática de Sistemas</th>
+          <td>Centro: EUPLA. Tiempo Completo. Activando desde Septiembre 2000 hasta Agosto 2007.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Profesora Titular de Ingeniería Técnica en Informática de Sistemas</th>
+          <td>Centro: EUPLA. Tiempo Completo. Activando desde Septiembre 2007 hasta Septiembre 2012.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Vocal del Tribunal Informático de Ingeniería Técnica en Informática de Sistemas</th>
+          <td>Centro: EUPLA. Tiempo Completo. Activando desde Octubre 1997 hasta Septiembre 2004.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Presidenta del Tribunal de Ingeniería Técnica en Informática de Sistemas</th>
+          <td>Centro: EUPLA. Tiempo Completo. Activando desde Octubre 2004 hasta Septiembre 2012.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Dirección de proyectos fin de carrera pertenecientes a la Ingeniería Técnica en Informática de Sistemas</th>
+          <td>Centro: EUPLA. Tiempo Completo. Activando desde Octubre 1997 hasta Septiembre 2012.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Profesor Colaborador Docente de los Trabajos Fin de Master del Master de Educación y TIC (elearning)</th>
+          <td>Centro: UOC. Tiempo Parcial. Activando desde Febrero 2017 hasta Junio 2020.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Profesora Asociada del Grado de Ingeniería Informática</th>
+          <td>Centro: Escuela Universitaria Politécnica de Teruel. Tiempo Parcial. Activando desde 18/09/2019 hasta 12/11/2019.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Directora de los Trabajos Fin de Master del Master de Inteligencia Artificial</th>
+          <td>Centro: UNIR. Tiempo Parcial. Activando desde Febrero 2022 hasta Septiembre 2023</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Profesora del Master Universitario en Investigación Educativa</th>
+          <td>Centro: VIU. Tiempo Parcial. Activando desde Octubre 2023 hasta la Actualidad.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Profesora del Master Universitario en Investigación Educativa</th>
+          <td>Centro: VIU. Tiempo Parcial. Activando desde Octubre 2023 hasta la Actualidad.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Profesora del Master Universitario en Formación del Profesorado especialidad de Tecnología e Informática</th>
+          <td>Centro: VIU. Tiempo Parcial. Activando desde Octubre 2023 hasta la Actualidad.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Directora de los Trabajos Fin de Master del Master Universitario en Formación del Profesorado especialidad de Tecnología e Informática</th>
+          <td>Centro: VIU. Tiempo Parcial. Activando desde Enero 2023 hasta la Actualidad.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Directora de los Trabajos Fin de Master del Master Universitario en Necesidades Educativas Especiales y Atención Temprana</th>
+          <td>Centro: VIU. Tiempo Parcial. Activando desde Enero 2023 hasta la Actualidad.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Dirección TFM Máster Profesorado en Educación Secundaria</th>
+          <td>Centro: UDIMA. Tiempo Parcial. Activando desde Octubre 2023 hasta la Actualidad.</td>
+        </tr>
+        
+      </tbody> 
+    </table>`;
+
+
+    document.getElementById("tablaMovil").innerHTML +=`<table class="table table-sm">
     <caption>Conocimiento de idiomas:</caption>
       <thead><tr><th scope="col">Idioma</th><th scope="col">Nivel</th></tr></thead>
       <tbody>

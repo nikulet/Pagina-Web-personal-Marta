@@ -603,12 +603,12 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
-
+/*
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
-  }
-}
+  } 
+}  */
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
@@ -4186,7 +4186,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 5px 20px 5px 0px;
+  padding: 5px 20px 5px 20px;
   color: var(--bs-card-color);
 }
 
@@ -11005,7 +11005,7 @@ header.masthead h1, header.masthead .h1 {
       width: 80%;
     }
     #datosPersonalessIndex1 {
-      width: 100%;
+      width: 98%;
     }
 }
 
@@ -11069,7 +11069,7 @@ header.masthead h1, header.masthead .h1 {
 
 @media (max-width: 850px) {
   #datosPersonalessIndex1 {
-    width: 100%;
+    width: 98%;
   }
 #colapExample6 {
   width: 100%;
@@ -11079,7 +11079,7 @@ header.masthead h1, header.masthead .h1 {
 }
 }
 
-@media (min-width: 773px) {
+@media (min-width: 774px) {
   #RedesSocialesFooter1 {
     display: none;
   }
@@ -11101,7 +11101,7 @@ header.masthead h1, header.masthead .h1 {
 
 @media (max-width: 773px) {
   #datosPersonalessIndex {
-    width: 100%;
+    width: 98%;
     margin: auto;
     background-color: #ebebd8;
   }
@@ -11120,9 +11120,6 @@ header.masthead h1, header.masthead .h1 {
         .card {
           border-radius: 20px;
         }
-                .card {
-                  border-radius: 20px;
-                }
     #tablaGrandeCompleta {
       display: none;
     }
@@ -11131,11 +11128,24 @@ header.masthead h1, header.masthead .h1 {
         }
   .card-body {
     padding: 0;
-    padding-right: 15px;
-  }
+  } 
   .btn {
     font-size: 20px;
   }
+.listStudy li {
+padding: 0;
+}
+
+p {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
+}
+
+.number {
+  margin: auto;
+}
+
 }
 
 @media (max-width: 550px) {
@@ -11160,6 +11170,12 @@ ol li {
 }
 .h2ActividadEnseno {
   font-size: 18px;
+}
+ol .number {
+  padding: 0;
+}
+ul .listStudy {
+  margin: 0;
 }
 }
 
@@ -11190,6 +11206,9 @@ ol li {
     padding-top: 3.5rem;
     padding-bottom: 0;  
   }
+    .number {
+      width: 50%;
+    }
 
     .px-4 {
       padding: 0 !important;
@@ -11426,16 +11445,18 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
 }
 
 
-@media (min-width: 655px) {
+@media (min-width: 656px) {
 p {
     margin-left: 80px;
     margin-right: 80px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .number {
-    width: 75%;
     margin: auto;
   }
+#ensenoTablaPequna {
+  display: none;
+}
 }
 
 
@@ -11619,7 +11640,7 @@ ol .listaStudySubCapitolo {
 
 .listStudy li {
   list-style-type:lower-latin;
-  color: black;
+  /* color: black; */
 }
 
 .listStudy1 li {
@@ -11855,9 +11876,12 @@ https: //www.youtube.com/watch?v=RwjgfNX41TE  minutul 48 si 30 secunde si minutu
     }
   }
   p {
-    margin-top: 50px;
+   /* margin-top: 50px;  */
     margin-left: 15px;
     margin-right: 15px;
+  }
+  #bigTaulaEnseno {
+    display: none;
   }
 }
 /* Sfirsit  O imagine care se misca de la stinga la dreapta  */
