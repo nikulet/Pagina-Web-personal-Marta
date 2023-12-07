@@ -106,6 +106,7 @@ function type() {
 
 
 
+if(document.getElementById("ensenoTablaPequna") != null){
 
 document.getElementById("ensenoTablaPequna").innerHTML +=`<table class="table table-sm">
         <caption>Puestos desempeñados en la enseñanza reglada universitaria:</caption>
@@ -194,8 +195,10 @@ document.getElementById("ensenoTablaPequna").innerHTML +=`<table class="table ta
         
       </tbody> 
     </table>`;
+}
 
 
+if(document.getElementById("tablaMovil") != null){
     document.getElementById("tablaMovil").innerHTML +=`<table class="table table-sm">
     <caption>Conocimiento de idiomas:</caption>
       <thead><tr><th scope="col">Idioma</th><th scope="col">Nivel</th></tr></thead>
@@ -207,3 +210,4 @@ document.getElementById("ensenoTablaPequna").innerHTML +=`<table class="table ta
         <tr><th scope="row">Griego</th><td>A1</td></tr> 
       </tbody> 
     </table>`;
+}
