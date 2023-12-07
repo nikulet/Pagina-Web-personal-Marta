@@ -11426,7 +11426,7 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
 }
 
 
-@media (min-width: 655px) {
+@media (min-width: 656px) {
 p {
     margin-left: 80px;
     margin-right: 80px;
@@ -11436,6 +11436,9 @@ p {
     width: 75%;
     margin: auto;
   }
+    #ensenoTablaPequna {
+      display: none;
+    }
 }
 
 
@@ -11859,6 +11862,9 @@ https: //www.youtube.com/watch?v=RwjgfNX41TE  minutul 48 si 30 secunde si minutu
     margin-left: 15px;
     margin-right: 15px;
   }
+        #bigTaulaEnseno {
+          display: none;
+        }
 }
 /* Sfirsit  O imagine care se misca de la stinga la dreapta  */
 
