@@ -11120,6 +11120,9 @@ header.masthead h1, header.masthead .h1 {
         .card {
           border-radius: 20px;
         }
+                .card {
+                  border-radius: 20px;
+                }
     #tablaGrandeCompleta {
       display: none;
     }
@@ -11170,12 +11173,6 @@ ol li {
 }
 .h2ActividadEnseno {
   font-size: 18px;
-}
-ol .number {
-  padding: 0;
-}
-ul .listStudy {
-  margin: 0;
 }
 }
 
@@ -11445,7 +11442,7 @@ screen 1547px, 1444px, 1121px, 900px, 816px, 680px
 }
 
 
-@media (min-width: 656px) {
+@media (min-width: 655px) {
 p {
     margin-left: 80px;
     margin-right: 80px;
@@ -11454,9 +11451,6 @@ p {
   .number {
     margin: auto;
   }
-#ensenoTablaPequna {
-  display: none;
-}
 }
 
 
@@ -11876,12 +11870,9 @@ https: //www.youtube.com/watch?v=RwjgfNX41TE  minutul 48 si 30 secunde si minutu
     }
   }
   p {
-   /* margin-top: 50px;  */
+    margin-top: 50px;
     margin-left: 15px;
     margin-right: 15px;
-  }
-  #bigTaulaEnseno {
-    display: none;
   }
 }
 /* Sfirsit  O imagine care se misca de la stinga la dreapta  */
