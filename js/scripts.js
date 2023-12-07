@@ -102,8 +102,8 @@ function type() {
 }
 /*  FIN Txtu care se scrie automat singur  */  
 
-
-const tablaMovil = document.getElementById('tablaMovil').innerHTML +=`<table class="table table-sm">
+if(document.getElementById("tablaMovil") != null){
+const tablaMovil = document.getElementById("tablaMovil").innerHTML +=`<table class="table table-sm">
     <caption>Conocimiento de idiomas:</caption>
       <thead><tr><th scope="col">Idioma</th><th scope="col">Nivel</th></tr></thead>
       <tbody>
@@ -114,3 +114,4 @@ const tablaMovil = document.getElementById('tablaMovil').innerHTML +=`<table cla
         <tr><th scope="row">Griego</th><td>A1</td></tr> 
       </tbody> 
     </table>`;
+}
