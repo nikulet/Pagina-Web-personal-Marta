@@ -43,14 +43,11 @@ window.addEventListener('DOMContentLoaded', event => {
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'flex') {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
         });
     });
-
-
-
 
     // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
@@ -69,7 +66,50 @@ function update() {
     progress.style.width = `${((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100)}%`;
     requestAnimationFrame(update);
 }
-/* Fin Para barra de progreso  */
+/* Inicio Para barra de progreso  */
+
+
+/* Header cambio de IMG random 
+const images = [
+
+"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/1.jpg",
+"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/2.jpg",
+"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/3.jpg",
+"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/4.jpg",
+"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/5.jpg",
+"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/6.jpg",
+"./foto-Reformas-Barcelona-EV/carusel-fotos-Reformas-Barcelona/7.jpg",
+
+];
+
+var currentURL = window.location.href;
+
+if (currentURL.includes("index.html")) {
+// Estás en la página index.html
+const imag = document.getElementById('fotoCarusel');
+let currentIndex = 0;
+
+function changeBackground() {
+imag.style.backgroundImage = `url('${images[currentIndex]}')`;
+currentIndex = (currentIndex + 1) % images.length;
+}
+
+// Oculta el carrusel hasta que todas las imágenes se hayan cargado por completo
+imag.style.display = 'none';
+
+// Precarga de imágenes
+const preloadImages = images.map((imageSrc) => {
+const img = new Image();
+img.src = imageSrc;
+img.onload = () => {
+// Muestra el carrusel una vez que todas las imágenes se hayan cargado
+imag.style.display = 'block';
+};
+});
+
+setInterval(changeBackground, 1000);
+}
+*/
 
 
 
@@ -100,10 +140,24 @@ function type() {
     }
 }, 8000);
 }
-/*  FIN Txtu care se scrie automat singur  */  
+/*  FIN Txtu care se scrie automat singur  */
+
+if(document.getElementById("rides") != null){
+const rides = document.getElementById("rides").innerHTML=`<h4 style="text-align: center;"><em class="TiposRedesSociales">Redes sociales:</em></h4>
+            <div id="RedesSocialesFooter">
+                <div id="RedesSocialesFacebook"><a><i class="bi bi-facebook"></i></a></div>
+                <div id="RedesSocialesTwitter"><a><i class="bi bi-twitter"></i></a></div>
+                <div id="RedesSocialesYoutube"><a><i class="bi bi-youtube"></i></a></div>
+                <div id="RedesSocialesInstagram"><a><i class="bi bi-instagram"></i></a></div>
+                <div id="RedesSocialesLinkedin"><a><i class="bi bi-linkedin"></i></a></div>
+                <div id="RedesSocialesGithub"><a><i class="bi bi-github"></i></a></div>
+                <div id="RedesSocialesWhatsapp"><a href="https://wa.me/0034646930223?text=Hola%20Marta." target="_blank"><i class="bi bi-whatsapp"></i></a></div>
+            </div>`;
+}
+
 
 if(document.getElementById("tablaMovil") != null){
-const tablaMovil = document.getElementById("tablaMovil").innerHTML +=`<table class="table table-sm">
+const tablaMovil = document.getElementById("tablaMovil").innerHTML=`<table class="table table-sm">
     <caption>Conocimiento de idiomas:</caption>
       <thead><tr><th scope="col">Idioma</th><th scope="col">Nivel</th></tr></thead>
       <tbody>
