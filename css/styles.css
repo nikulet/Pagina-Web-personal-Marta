@@ -10897,7 +10897,8 @@ header.masthead {
   background-size: cover;
 }
 /* IMG de fondo en header en index.html */
-header#headerIndex {
+header#headerIndex { 
+
   padding-top: 4rem;
     padding-bottom: calc(30rem - 4.5rem);
     background-image: url("../img/network-3354116_1920.jpg");
@@ -10927,7 +10928,7 @@ header#headerExitosBackground {
     background-size: cover;
 }
 
-#headerServiciosBackground {
+header#headerServiciosBackground {
   padding-top: 4rem;
   padding-bottom: calc(10rem - 4.5rem);
   background-image: url("../foto-Reformas-Barcelona-EV/cucina-Reformas-Barcelona-EV/Reformas-Cusina01.jpg");
@@ -10936,7 +10937,7 @@ header#headerExitosBackground {
   background-size: cover;
 }
 
-#headerReformasBackground {
+header#headerReformasBackground {
     padding-top: 5rem;
     padding-bottom: calc(30rem - 4.5rem);
     background-image: url("../img/Без\ имени-4.png");
@@ -11216,6 +11217,9 @@ ol li {
 }
 .navbar-toggler {
   margin: 3px 0px;
+}
+p {
+  font-size: 20px;
 }
 }
 
@@ -11937,5 +11941,26 @@ font-size: 18px;
 }
 ol {
   font-size: 1px;
+}
+.TextoSubrayado { 
+      font-size: 14px;
+}
+li b {font-size: 12px;}
+.text-white-75 {
+  font-size: 22px;
+}
+caption {
+  font-size: 16px;
+}
+.bg-primary {
+  margin: 0;
+}
+header#headerIndex, header.masthead,
+header#headerContactoBackground,
+header#headerExitosBackground,
+header#headerServiciosBackground,
+header#headerReformasBackground {
+  padding-top: 0rem;
+  padding-bottom: 10rem;
 }
 }
