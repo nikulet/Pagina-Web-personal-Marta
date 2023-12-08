@@ -112,11 +112,6 @@ setInterval(changeBackground, 1000);
 */
 
 
-var currentURL = window.location.href;
-if (currentURL.includes("https://nikulet.github.io/Pagina-Web-personal-Marta/")) {
-window.onload("https://nikulet.github.io/Pagina-Web-personal-Marta/index.html");
-}
-
 
 /*  Inceput Txtu care se scrie automat singur  */
 const text = `Desarrolladora de tareas de gestión contable y administrativas en diversas empresas tras concluir mi Formación Profesional de segundo grado en la rama administrativa y comercial con especialidad en Informática de Empresas.
