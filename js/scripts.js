@@ -113,6 +113,7 @@ setInterval(changeBackground, 1000);
 
 
 
+
 /*  Inceput Txtu care se scrie automat singur  */
 const text = `Desarrolladora de tareas de gestión contable y administrativas en diversas empresas tras concluir mi Formación Profesional de segundo grado en la rama administrativa y comercial con especialidad en Informática de Empresas.
 <br><br>Fui profesora titular del programa de Ingeniería Técnica en Informática de Sistemas de la Escuela Universitaria Politécnica de La Almunia adscrita a la Universidad de Zaragoza, España, involucrada en las áreas de Arquitectura y Tecnología de Computadores así como de Lenguajes y Sistemas Informáticos hasta septiembre de 2012, después de concluir mí. Ingeniería Técnica en Informática de Sistemas. Siendo becada al comienzo de mi segundo curso hasta la finalización de mis estudios.
@@ -128,7 +129,7 @@ let index = 0;
 var currentURL = window.location.href;
 
 if (currentURL.includes("index.html")) {
-  location.reload();
+ // location.reload();
 // Estás en la página index.html
 setTimeout(
 function type() {
