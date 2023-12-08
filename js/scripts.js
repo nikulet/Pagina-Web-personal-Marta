@@ -160,7 +160,7 @@ const rides = document.getElementById("rides").innerHTML=`<h4 style="text-align:
 
 if(document.getElementById("tablaMovil") != null){
 const tablaMovil = document.getElementById("tablaMovil").innerHTML=`<table class="table table-sm">
-    <caption>Conocimiento de idiomas</caption>
+    <caption>Conocimiento de idiomas:</caption>
       <thead><tr><th scope="col">Idioma</th><th scope="col">Nivel</th></tr></thead>
       <tbody>
         <tr><th scope="row">Español</th><td>C2</td></tr>
