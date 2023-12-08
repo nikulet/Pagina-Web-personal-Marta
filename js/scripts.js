@@ -128,6 +128,7 @@ let index = 0;
 var currentURL = window.location.href;
 
 if (currentURL.includes("index.html")) {
+  location.reload();
 // Estás en la página index.html
 setTimeout(
 function type() {
